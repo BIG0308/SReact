@@ -1,13 +1,16 @@
-import React from 'react';
-import 'antd/dist/antd.min.css';
-import {Button} from "antd";
+import React, {Component, Fragment} from "react";
+import "antd/dist/antd.min.css";
+import TransformTree from "./components/treeform/TreeTransform";
 
-function App() {
-    return (
-        <div className="App">
-            <Button type={'primary'}>hh</Button>
-        </div>
-    );
+class App extends Component {
+    render() {
+        return (
+            <Fragment>
+                <TransformTree/>
+            </Fragment>
+        );
+    }
 }
 
 export default App;
+
